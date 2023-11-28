@@ -17,3 +17,11 @@ def last_element(lst):
     if (not lst):
         return None
     return lst[-1]
+
+
+    # Instead, if anything in the list, let's get the last thing
+    # (That's more clear).
+
+    # This is more straightforward
+    # if lst:
+        # return lst[-1]

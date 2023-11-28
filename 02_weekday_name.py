@@ -12,7 +12,7 @@ def weekday_name(day_of_week):
         >>> weekday_name(9)
         >>> weekday_name(0)
     """
-    DAYS_OF_THE_WEEK = {
+    DAYS_OF_THE_WEEK = {   # Put this outside the function if SCREAMING_SNAKE
         1: "Sunday",
         2: "Monday",
         3: "Tuesday",
@@ -22,8 +22,10 @@ def weekday_name(day_of_week):
         7: "Saturday"
     }
 
-    if (day_of_week in range(1,8)):       # TODO: is this okay? Non standard!
+    if (day_of_week in range(1,8)):    # Could use .get(), return none if not.
         return DAYS_OF_THE_WEEK[day_of_week]
     else:
         return None
 
+
+# Uses a list instead of a dict in the solution.

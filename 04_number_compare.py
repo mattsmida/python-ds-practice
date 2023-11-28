@@ -11,5 +11,10 @@ def number_compare(a, b):
         'First is greater'
     """
 
+    # This is a hated solution.
+    # Do better.
+
+    # (Don't nest your ternaries, instead, use a conditional block.)
+    # (But nice try.)
     return ("First is greater" if a > b else (
         "Second is greater" if b > a else "Numbers are equal"))
