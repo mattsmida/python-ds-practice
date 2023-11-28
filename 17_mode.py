@@ -11,3 +11,11 @@ def mode(nums):
         >>> mode([2, 2, 3, 3, 2])
         2
     """
+    # [1.count, 2.count, 1.count] >> [1:2, 2:1, 1: 2]
+    # find the max count - [2]
+    # return the key of the max count
+
+    # returns 
+    freq_count_to_num = [(nums.count(num), num) for num in nums]
+    num = max(freq_count_to_num)[1]
+    return num
