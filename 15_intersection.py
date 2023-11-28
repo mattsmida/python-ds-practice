@@ -17,7 +17,4 @@ def intersection(l1, l2):
     l1_set = set(l1)
     l2_set = set(l2)
 
-    # return list(l1_set | l2_set)
     return list(l1_set & l2_set)
-    # return (l1 & l2)
-    # return list(l1 & l2)
