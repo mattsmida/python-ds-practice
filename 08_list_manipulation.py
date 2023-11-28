@@ -45,17 +45,22 @@ def list_manipulation(lst, command, location, value=None):
         return None
     if (location != 'beginning' and location != 'end'):
         return None
+    
     if (location == 'beginning'):
-        #add or subtract
+        # add or subtract
         if (command == 'add'):
             lst.insert(0, value)
             return lst
         elif (command == 'remove'):
             return lst.pop(0)
     elif (location == 'end'):
-        #add or subtract
+        # add or subtract
         if (command == 'add'):
             lst.append(value)
             return lst
         elif (command == 'remove'):
             return lst.pop()
+        
+# elif unecessary, but makes it readable
+# if, elif elif elif .etc
+# can leave out 44-46 return none, will still return none

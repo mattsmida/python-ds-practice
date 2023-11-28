@@ -23,3 +23,7 @@ def is_palindrome(phrase):
     """
     reverse = phrase[::-1]
     return reverse.lower().replace(" ", "") == phrase.lower().replace(" ", "")
+
+# doing .lower().replace() twice >> not DRY
+# apply .lower().replace() first to initial phrase, then reverse and 
+# see if reversed is same

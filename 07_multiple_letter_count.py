@@ -8,3 +8,5 @@ def multiple_letter_count(phrase):
         {'Y': 1, 'a': 1, 'y': 1}
     """
     return {ltr: phrase.count(ltr) for ltr in phrase}
+
+#runtime: On^2 vs freq counter with O(n)
